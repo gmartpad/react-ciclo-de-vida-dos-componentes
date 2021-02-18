@@ -19,10 +19,13 @@ export default class ArrayDeNotas{
 
         this.notas.push(novaNota);
 
+        this.notificar();
+
     }
 
     apagarNota(index){
         this.notas.splice(index, 1);
+        this.notificar();
     }
 
 }
